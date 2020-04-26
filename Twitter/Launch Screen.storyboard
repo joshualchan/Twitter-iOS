@@ -16,12 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="TwitterLogo" translatesAutoresizingMaskIntoConstraints="NO" id="zQN-C9-Roo">
-                                <rect key="frame" x="37" y="183" width="300" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="TwitterLogo" translatesAutoresizingMaskIntoConstraints="NO" id="zQN-C9-Roo">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="NHt-cS-ztW"/>
+                                    <constraint firstAttribute="width" constant="300" id="TEa-Ti-1MU"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zQN-C9-Roo" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="DMd-ly-K8E"/>
+                            <constraint firstItem="zQN-C9-Roo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dD7-oY-CXC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                     </view>
                 </viewController>
